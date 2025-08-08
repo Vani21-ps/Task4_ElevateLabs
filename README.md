@@ -1,28 +1,89 @@
-# 🌐 Responsive Landing Page
+# 📱 Task 4: Make a Website Mobile-Friendly Using CSS Media Queries
 
-This is a responsive landing page built using **HTML5** and **CSS3**, created as part of a full stack development internship project.
+This task involves converting a desktop-only HTML page into a **responsive, mobile-friendly website** using **CSS media queries**.
 
-## 📌 Features
+---
 
-- 📄 **HTML5 & CSS3** structure
-- 🎨 Clean UI with a modern, aesthetic design
-- 📱 Fully **responsive layout** using **Flexbox** and **media queries**
-- 🔗 Functional **navigation links** and **social media links**
-- 🖼️ Custom logo and consistent color theme
-- 🚀 Optimized for desktop and mobile devices
+## ✅ Objective
 
-## 🧱 Project Structure
+Transform the layout to work on smaller screens (like phones and tablets) by:
+- Stacking columns vertically
+- Scaling images properly
+- Adjusting font sizes
+- Making the nav menu mobile-friendly
 
-📁 Task1_Landing_Page
+---
+
+## 🧰 Tools Used
+
+- 🧠 HTML, CSS (Vanilla)
+- 💻 Visual Studio Code (VS Code)
+- 🌐 Chrome DevTools (Device Toolbar)
+
+---
+
+## 📁 Project Structure
+
+ElevateLabs_Task1/
 ├── index.html
+├── about.html
 ├── style.css
-└── logo.png
+├── logo.png
+└── README.md
 
+yaml
+Copy
+Edit
 
-## 🚀 Getting Started
+---
 
-1. Clone the repository  
-```bash
-git clone https://github.com/yourusername/landing-page.git
-cd landing-page
-Open the project in your browser using Live Server or directly open index.html.
+## 🧩 Key CSS Changes
+
+### ✅ Media Query Used
+```css
+@media (max-width: 768px) {
+  /* Mobile-specific styles go here */
+}
+✅ Responsive Fixes Included
+Reduced font sizes for smaller screens
+
+Set flex-direction: column for layout containers
+
+Made nav ul stack vertically
+
+Ensured all img tags scale within their containers:
+
+css
+Copy
+Edit
+img {
+  max-width: 100%;
+  height: auto;
+}
+Fixed overflow issues by setting widths to 100%
+
+🧪 How to Test Responsiveness
+Open the project in VS Code
+
+Right-click index.html → Open in browser
+
+Open Chrome DevTools (Right-click → Inspect)
+
+Toggle device toolbar (Cmd + Shift + M on Mac)
+
+Choose a mobile device (e.g., iPhone SE, Pixel 5)
+
+Observe how:
+
+Layout stacks vertically
+
+Navigation adjusts
+
+Fonts and images scale
+
+📌 Notes
+All changes are done via media queries in style.css
+
+No JavaScript or frameworks used
+
+Site is now fully responsive for widths below 768px
